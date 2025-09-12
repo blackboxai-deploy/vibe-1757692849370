@@ -1,0 +1,75 @@
+{
+  "version": "2.1.0",
+  "lastUpdated": "2024-01-15T10:30:00Z",
+  "basic": {
+    "knockbackReduction": 70,
+    "pvpMode": "1v1",
+    "selectedServer": "hypixel", 
+    "stealthMode": true,
+    "autoDetection": true
+  },
+  "advanced": {
+    "horizontalReduction": 65,
+    "verticalReduction": 45,
+    "velocityMultiplier": 0.3,
+    "randomizeValues": true,
+    "detectionBypass": true,
+    "customDelay": 150
+  },
+  "network": {
+    "packetOptimization": true,
+    "lagCompensation": true,
+    "pingThreshold": 100,
+    "bufferSize": 1024
+  },
+  "safety": {
+    "maxReduction": 85,
+    "emergencyStop": true,
+    "logActivity": false,
+    "safetyChecks": true
+  },
+  "keybinds": {
+    "toggle": "F1",
+    "quickAdjust": "F2",
+    "stealthToggle": "F3", 
+    "emergencyStop": "F4"
+  },
+  "servers": {
+    "hypixel": {
+      "name": "Hypixel Network",
+      "address": "mc.hypixel.net",
+      "recommendedSettings": {
+        "knockbackReduction": 75,
+        "stealthMode": true,
+        "detectionBypass": true
+      }
+    },
+    "cubecraft": {
+      "name": "CubeCraft Games",
+      "address": "play.cubecraft.net",
+      "recommendedSettings": {
+        "knockbackReduction": 60,
+        "stealthMode": true,
+        "detectionBypass": false
+      }
+    },
+    "mineplex": {
+      "name": "Mineplex",
+      "address": "us.mineplex.com",
+      "recommendedSettings": {
+        "knockbackReduction": 65,
+        "stealthMode": true,
+        "detectionBypass": true
+      }
+    },
+    "custom": {
+      "name": "Custom Server",
+      "address": "localhost",
+      "recommendedSettings": {
+        "knockbackReduction": 80,
+        "stealthMode": false,
+        "detectionBypass": false
+      }
+    }
+  }
+}
