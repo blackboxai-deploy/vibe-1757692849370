@@ -1,0 +1,142 @@
+{
+  "program": {
+    "name": "Minecraft Anti-Knockback Pro",
+    "version": "2.1.0",
+    "author": "BLACKBOX.AI Professional Tools",
+    "build": "20240115-PRO"
+  },
+  "knockback": {
+    "horizontalReduction": 75,
+    "verticalReduction": 50,
+    "velocityMultiplier": 0.3,
+    "maxReduction": 90,
+    "minReduction": 10,
+    "adjustmentStep": 5
+  },
+  "detection": {
+    "stealthMode": true,
+    "randomizeValues": true,
+    "detectionBypass": true,
+    "customDelay": 150,
+    "antiPatternDetection": true,
+    "variationRange": [-5, 5],
+    "adaptiveBypass": true
+  },
+  "servers": {
+    "hypixel": {
+      "enabled": true,
+      "name": "Hypixel Network",
+      "optimalReduction": 75,
+      "stealthRequired": true,
+      "detectiveRisk": "HIGH",
+      "recommendedSettings": {
+        "maxReduction": 80,
+        "randomization": true,
+        "delay": 180
+      }
+    },
+    "cubecraft": {
+      "enabled": true,
+      "name": "CubeCraft Games",
+      "optimalReduction": 65,
+      "stealthRequired": true,
+      "detectiveRisk": "MEDIUM",
+      "recommendedSettings": {
+        "maxReduction": 75,
+        "randomization": true,
+        "delay": 150
+      }
+    },
+    "mineplex": {
+      "enabled": true,
+      "name": "Mineplex",
+      "optimalReduction": 70,
+      "stealthRequired": false,
+      "detectiveRisk": "LOW",
+      "recommendedSettings": {
+        "maxReduction": 85,
+        "randomization": false,
+        "delay": 100
+      }
+    },
+    "custom": {
+      "enabled": true,
+      "name": "Custom Server",
+      "optimalReduction": 85,
+      "stealthRequired": false,
+      "detectiveRisk": "UNKNOWN",
+      "recommendedSettings": {
+        "maxReduction": 90,
+        "randomization": true,
+        "delay": 120
+      }
+    }
+  },
+  "pvpModes": {
+    "1v1": {
+      "name": "1v1 Duels",
+      "optimalReduction": 75,
+      "priority": "HIGH",
+      "description": "Perfect for dueling scenarios"
+    },
+    "team": {
+      "name": "Team PvP",
+      "optimalReduction": 60,
+      "priority": "MEDIUM",
+      "description": "Balanced for team fights"
+    },
+    "ffa": {
+      "name": "Free For All",
+      "optimalReduction": 80,
+      "priority": "HIGH",
+      "description": "Aggressive for chaos fights"
+    },
+    "custom": {
+      "name": "Custom Mode",
+      "optimalReduction": 70,
+      "priority": "MEDIUM",
+      "description": "User-defined settings"
+    }
+  },
+  "controls": {
+    "toggleKey": "F1",
+    "adjustKey": "F2",
+    "stealthKey": "F3",
+    "emergencyKey": "F4",
+    "enableHotkeys": true,
+    "allowSystemIntegration": true
+  },
+  "safety": {
+    "emergencyStop": true,
+    "maxUsageTime": 3600,
+    "logActivity": false,
+    "autoShutdown": false,
+    "warningThreshold": 85,
+    "maxConsecutiveHits": 10,
+    "cooldownPeriod": 30
+  },
+  "network": {
+    "packetOptimization": true,
+    "lagCompensation": true,
+    "pingThreshold": 100,
+    "maxLatency": 300,
+    "bufferSize": 1024,
+    "retryAttempts": 3
+  },
+  "ui": {
+    "theme": "dark",
+    "notifications": true,
+    "soundEffects": false,
+    "systemTray": true,
+    "autoMinimize": true,
+    "showAdvancedOptions": false
+  },
+  "advanced": {
+    "debugMode": false,
+    "verboseLogging": false,
+    "performanceMode": "balanced",
+    "memoryOptimization": true,
+    "cpuPriority": "normal",
+    "autoUpdates": true
+  }
+}
